@@ -1,0 +1,39 @@
+# "\n" + "Headshots as rifleman = " + rpvphs2 + "\n" + "Headshots as medic = " + mpvphs2 + "\n" + "Headshots as engineer = " + epvphs2 + "\n" + "Headshots as sniper = " + spvphs2
+
+# "\n" + "Headshots as rifleman = " + rpvehs2 + "\n" + "Headshots as medic = " + mpvehs2 + "\n" + "Headshots as engineer = " + epvehs2 + "\n" + "Headshots as sniper = " + spvehs2
+
+
+
+rpvphs1 = str(x['full_response']).split('[class]Rifleman [mode]PVP [stat]player_headshots  =')[1]
+rpvphs2 = rpvphs1.split("\n")[0]
+print(rpvphs2)
+
+mpvphs1 = str(x['full_response']).split('[class]Medic [mode]PVP [stat]player_headshots  =')[1]
+mpvphs2 = mpvphs1.split("\n")[0]
+print(mpvphs2)
+
+epvphs1 = str(x['full_response']).split('[class]Engineer [mode]PVP [stat]player_headshots  =')[1]
+epvphs2 = epvphs1.split("\n")[0]
+print(epvphs2)
+
+spvphs1 = str(x['full_response']).split('[class]Recon [mode]PVP [stat]player_headshots  =')[1]
+spvphs2 = spvphs1.split("\n")[0]
+print(spvphs2)
+
+
+
+rpvehs1 = str(x['full_response']).split('[class]Rifleman [mode]PVE [stat]player_headshots  =')[1]
+rpvehs2 = rpvehs1.split("\n")[0]
+print(rpvehs2)
+
+mpvehs1 = str(x['full_response']).split('[class]Medic [mode]PVE [stat]player_headshots  =')[1]
+mpvehs2 = mpvehs1.split("\n")[0]
+print(mpvehs2)
+
+epvehs1 = str(x['full_response']).split('[class]Engineer [mode]PVE [stat]player_headshots  =')[1]
+epvehs2 = epvphs1.split("\n")[0]
+print(epvehs2)
+
+spvehs1 = str(x['full_response']).split('[class]Recon [mode]PVE [stat]player_headshots  =')[1]
+spvehs2 = spvphs1.split("\n")[0]
+print(spvehs2)
